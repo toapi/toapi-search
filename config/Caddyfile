@@ -1,0 +1,9 @@
+www.toapi-search.com {
+    proxy / 127.0.0.1:5000
+    timeouts none
+    gzip
+}
+
+toapi-search.com {
+    redir http://www.toapi-search.com
+}
