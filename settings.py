@@ -1,6 +1,6 @@
 import os
 
-from toapi.cache import RedisCache, JsonSerializer
+from toapi.cache import RedisCache, PickleSerializer
 from toapi.settings import Settings
 
 
@@ -17,7 +17,7 @@ class MySettings(Settings):
             'port': 6379,
             'db': 0
         },
-        'serializer': JsonSerializer,
+        'serializer': PickleSerializer,
         'ttl': 10000
     }
     storage = {
